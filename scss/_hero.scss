@@ -1,0 +1,86 @@
+.hero {
+  background-image: url("https://media.giphy.com/media/YnjxvrvonPCcDtdppt/giphy.gif");
+  background-color: #000000;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 70px 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+  @media screen and (max-width: 768px) {
+    padding: 50px 15px;
+  }
+  @media screen and (min-width: 1024px) {
+    padding: 100px 15px;
+  }
+  img {
+    width: 100%;
+    object-fit: cover;
+    height: 250px;
+  }
+  .container {
+    max-width: 1210px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.673);
+    border-radius: 10px;
+    box-shadow: 0px 5px 30px #3a422b74;
+    backdrop-filter: blur(7px);
+    border: 1px solid rgba(255, 255, 255, 0);
+    padding: 50px;
+
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+      gap: 35px;
+      padding: 35px;
+    }
+  }
+  .hero-img,
+  .hero-text {
+    width: 50%;
+    @media screen and (max-width: 768px) {
+      width: 100%;
+    }
+  }
+  .hero-text {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    .btn {
+      @media screen and (max-width: 768px) {
+        margin: 0 auto;
+      }
+    }
+  }
+  .hero-title {
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 49px;
+    text-transform: uppercase;
+    color: #ffffff;
+    span {
+      color: var(--accent-color);
+    }
+    @media screen and (max-width: 500px) {
+      font-size: 30px;
+    }
+  }
+  .text,
+  h2 {
+    text-align: left;
+    margin: 0;
+  }
+
+  .hero-img {
+    display: flex;
+    justify-content: center;
+  }
+  .hero-img img {
+    width: auto;
+    display: block;
+  }
+}

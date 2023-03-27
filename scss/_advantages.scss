@@ -1,0 +1,43 @@
+.advantages {
+  background-color: var(--background-color);
+}
+.container {
+}
+.advantages-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+.advantages-item {
+  width: calc((100% - 48px) / 4);
+  background-color: #000;
+  border-radius: 4px;
+  img {
+    width: 100%;
+    display: block;
+    height: 144px;
+    object-fit: cover;
+  }
+  @media screen and (max-width: 1024px) {
+    width: calc((100% - 32px) / 2);
+  }
+  @media screen and (max-width: 560px) {
+    width: 100%;
+  }
+  h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    img {
+      width: 17px;
+      height: 17px;
+    }
+  }
+}
+.adv-card {
+  padding: 16px;
+}
+.text {
+}
