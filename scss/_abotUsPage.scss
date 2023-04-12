@@ -2,29 +2,154 @@
   padding: 90px 0;
   background-image: url("https://i.gifer.com/81mg.gif");
   .container {
-    width: 1210px;
+    max-width: 1210px;
     margin: auto;
-    background: rgba(255, 255, 255, 0.21);
-    border-radius: 4px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(5.8px);
+    background: rgba(59, 59, 59, 0.279);
+    border-radius: 10px;
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0);
+    padding: 50px;
     display: flex;
     padding: 50px;
+    @media screen and (max-width: 886px) {
+      flex-direction: column;
+      gap: 30px;
+    }
   }
   .hero-left {
     width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    justify-content: space-between;
+    @media screen and (max-width: 886px) {
+      width: 100%;
+    }
     .section-title {
       text-align: left;
     }
     .text {
       text-align: left;
+      margin: 0;
     }
   }
   .hero-right {
     width: 50%;
     display: flex;
     justify-content: center;
+    img {
+      max-width: 300px;
+      width: 100%;
+    }
+    @media screen and (max-width: 886px) {
+      width: 100%;
+    }
+  }
+}
+.soc-list {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-top: auto;
+}
+.soc-link {
+  background-color: rgb(55, 55, 55);
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: all 0.2s linear;
+  box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.415);
+  &:hover {
+    background-color: var(--accent-color);
+  }
+  &:hover {
+    .soc-icon {
+      fill: #000;
+    }
+  }
+}
+.soc-icon {
+  transition: all 0.2s linear;
+  fill: #fff;
+}
+.whatWeDo {
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
   }
   .section-title {
+  }
+
+  .btn {
+    max-width: fit-content;
+  }
+}
+.quote {
+  background-color: var(--background-color);
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+  .quote-icon {
+    fill: var(--accent-color);
+  }
+  .quote {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    color: #ffffff;
+  }
+}
+.team {
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .section-title {
+  }
+  .text {
+  }
+  .team-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+  .team-item {
+    width: calc((100% - 48px) / 4);
+    background-color: var(--background-color);
+    border-radius: 4px;
+    overflow: hidden;
+    @media screen and (max-width: 950px) {
+      width: calc((100% - 32px) / 2);
+    }
+    @media screen and (max-width: 500px) {
+      width: 100%;
+    }
+    img {
+      width: 100%;
+      height: 196px;
+      object-fit: cover;
+    }
+  }
+  .team-info {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  .team-mem {
+    color: var(--accent-color);
   }
 }

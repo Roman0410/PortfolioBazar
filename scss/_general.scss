@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 section {
-  padding: 75px 0;
+  padding: 55px 0;
 }
 .container {
   max-width: 1440px;
@@ -51,7 +51,7 @@ button {
   transition: all 0.2s linear;
 }
 .btn {
-  max-width: 150px;
+  max-width: fit-content;
   width: 100%;
   text-align: center;
   text-transform: uppercase;
