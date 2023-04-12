@@ -1,0 +1,26 @@
+.footer {
+  padding: 70px 0px;
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  p {
+    color: var(--text-color);
+    cursor: pointer;
+    a {
+      color: #fff;
+      margin-left: 15px;
+    }
+  }
+  .text {
+  }
+  .footer-contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+}

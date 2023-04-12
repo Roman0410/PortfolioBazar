@@ -7,6 +7,15 @@ h2 {
   color: #ffffff;
   margin-bottom: 16px;
 }
+h3 {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  color: #ffffff;
+}
 .section-title {
   font-weight: 700;
   font-size: 1.28;
@@ -17,9 +26,10 @@ h2 {
   margin-bottom: 16px;
 }
 .text {
-  font-size: 15px;
+  font-size: 14px;
   line-height: 1.6;
   text-align: center;
   color: var(--text-color);
-  max-width: 600px;
+  max-width: 712px;
+  margin: 0 auto;
 }

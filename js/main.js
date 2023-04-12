@@ -14,6 +14,13 @@ $(document).ready(function () {
     $(".header-nav").toggleClass("active");
   });
 });
+if ($(window).width() <= 1024) {
+  $(".process-item").click(function (event) {
+    $(this).closest("li").find(".process-body").toggleClass("open");
+  });
+} else if ($(window).width() > 1024) {
+  $(".process-body").addClass("open");
+}
 
 // const filterSlide = document.querySelectorAll(".swiper-slide");
 // console.log(filterSlide);

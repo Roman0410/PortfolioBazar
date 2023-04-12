@@ -1,34 +1,61 @@
 $(function () {
-  $(".slider").slick({
+  $(".services-slider").slick({
     slidesToShow: 2,
     slidesToScroll: 1,
     arrows: true,
+    breakpoint: 768,
+    responsive: [
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
   });
 
   $(".filter li").on("click", function () {
     var filter = $(this).data("filter");
-    $(".slider").slick("slickUnfilter");
+    $(".services-slider").slick("slickUnfilter");
 
     if (filter == "design") {
-      $(".slider").slick("slickFilter", ".design");
+      $(".services-slider").slick("slickFilter", ".design");
     } else if (filter == "landing") {
-      $(".slider").slick("slickFilter", ".landing");
+      $(".services-slider").slick("slickFilter", ".landing");
     } else if (filter == "seo") {
-      $(".slider").slick("slickFilter", ".seo");
+      $(".services-slider").slick("slickFilter", ".seo");
     } else if (filter == "All") {
-      $(".slider").slick("slickUnfilter");
+      $(".services-slider").slick("slickUnfilter");
     }
   });
-});
-let btnContainer = document.getElementById("service-filter");
-let btns = btnContainer.getElementsByClassName("filter-btn");
-for (let i = 0; i < btns.length; i++) {
-  btns[i].addEventListener("click", function () {
-    let current = document.getElementsByClassName("current-filter");
-    current[0].className = current[0].className.replace(" current-filter", "");
-    this.className += " current-filter";
+  let btnContainer = document.getElementById("service-filter");
+  let btns = btnContainer.getElementsByClassName("filter-btn");
+  for (let i = 0; i < btns.length; i++) {
+    btns[i].addEventListener("click", function () {
+      let current = document.getElementsByClassName("current-filter");
+      current[0].className = current[0].className.replace(
+        " current-filter",
+        ""
+      );
+      this.className += " current-filter";
+    });
+  }
+  $(".works").slick({
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    arrows: true,
+    breakpoint: 768,
+    responsive: [
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
   });
-}
+});
+
 // if ($(".services-swiper").length) {
 //   const swiper = new Swiper(".services-swiper", {
 //     loop: true,

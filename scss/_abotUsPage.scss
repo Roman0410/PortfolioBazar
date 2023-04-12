@@ -1,0 +1,30 @@
+.about-hero {
+  padding: 90px 0;
+  background-image: url("https://i.gifer.com/81mg.gif");
+  .container {
+    width: 1210px;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.21);
+    border-radius: 4px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.8px);
+    display: flex;
+    padding: 50px;
+  }
+  .hero-left {
+    width: 50%;
+    .section-title {
+      text-align: left;
+    }
+    .text {
+      text-align: left;
+    }
+  }
+  .hero-right {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+  }
+  .section-title {
+  }
+}
