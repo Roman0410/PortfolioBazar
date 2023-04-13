@@ -1,6 +1,20 @@
+main {
+  position: relative;
+}
+#particles-js {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: 50% 50%;
+  position: absolute;
+  top: 0px;
+  z-index: 0;
+}
 .hero {
-  background-image: url("https://media.giphy.com/media/GOFp6uulTA5MzD7hJq/giphy-downsized-large.gif");
-  background-color: #000000;
+  height: 100%;
+  background-repeat: no-repeat;
+  background: rgb(13, 45, 64);
+  position: relative;
   background-position: center;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -22,13 +36,13 @@
     height: 250px;
   }
   .container {
-    max-width: 1210px;
+    max-width: 1110px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: rgba(0, 0, 0, 0.673);
+    background: rgba(23, 23, 23, 0.673);
     border-radius: 10px;
-
+    z-index: 2;
     backdrop-filter: blur(7px);
     border: 1px solid rgba(255, 255, 255, 0);
     padding: 50px;
