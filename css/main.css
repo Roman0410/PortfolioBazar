@@ -358,7 +358,7 @@ h3 {
 }
 
 .hero {
-  background-image: url("https://media.giphy.com/media/YnjxvrvonPCcDtdppt/giphy.gif");
+  background-image: url("../img/AmusedDefiniteIguana.gif");
   background-color: #000000;
   background-position: center;
   background-attachment: fixed;
@@ -1050,7 +1050,7 @@ h3 {
 }
 @media screen and (max-width: 950px) {
   .team .team-item {
-    width: calc((100% - 32px) / 2);
+    width: calc((100% - 16px) / 2);
   }
 }
 @media screen and (max-width: 500px) {
@@ -1072,5 +1072,50 @@ h3 {
   gap: 10px;
 }
 .team .team-mem {
+  color: var(--accent-color);
+}
+
+.tech-section .container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.tech-section .section-tittle {
+  margin: 0;
+}
+.tech-section .tech-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+.tech-section .tech-item {
+  background-color: var(--background-color);
+  border-radius: 4px;
+  overflow: hidden;
+  width: calc((100% - 48px) / 4);
+}
+@media screen and (max-width: 900px) {
+  .tech-section .tech-item {
+    width: calc((100% - 16px) / 2);
+  }
+}
+@media screen and (max-width: 450px) {
+  .tech-section .tech-item {
+    width: 100%;
+  }
+}
+.tech-section .tech-item img {
+  height: 178px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.tech-section .tech-info {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.tech-section .tech-name {
   color: var(--accent-color);
 }/*# sourceMappingURL=main.css.map */

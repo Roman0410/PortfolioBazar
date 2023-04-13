@@ -131,7 +131,7 @@
     border-radius: 4px;
     overflow: hidden;
     @media screen and (max-width: 950px) {
-      width: calc((100% - 32px) / 2);
+      width: calc((100% - 16px) / 2);
     }
     @media screen and (max-width: 500px) {
       width: 100%;
@@ -150,6 +150,49 @@
     gap: 10px;
   }
   .team-mem {
+    color: var(--accent-color);
+  }
+}
+.tech-section {
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .section-tittle {
+    margin: 0;
+  }
+  .text {
+  }
+  .tech-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+  .tech-item {
+    background-color: var(--background-color);
+    border-radius: 4px;
+    overflow: hidden;
+    width: calc((100% - 48px) / 4);
+    @media screen and (max-width: 900px) {
+      width: calc((100% - 16px) / 2);
+    }
+    @media screen and (max-width: 450px) {
+      width: 100%;
+    }
+    img {
+      height: 178px;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+  .tech-info {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .tech-name {
     color: var(--accent-color);
   }
 }
