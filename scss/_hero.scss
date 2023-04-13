@@ -13,7 +13,7 @@ main {
 .hero {
   height: 100%;
   background-repeat: no-repeat;
-  background: rgb(13, 45, 64);
+  background: rgb(10, 10, 10);
   position: relative;
   background-position: center;
   background-attachment: fixed;
@@ -29,6 +29,33 @@ main {
   }
   @media screen and (min-width: 1024px) {
     padding: 100px 15px;
+  }
+  span.cursor {
+    display: inline-block;
+    background-color: #ccc;
+    margin-left: 0.1rem;
+    width: 3px;
+    animation: blink 1s infinite;
+  }
+  .container p span.cursor.typing {
+    animation: none;
+  }
+  @keyframes blink {
+    0% {
+      background-color: #ccc;
+    }
+    49% {
+      background-color: #ccc;
+    }
+    50% {
+      background-color: transparent;
+    }
+    99% {
+      background-color: transparent;
+    }
+    100% {
+      background-color: #ccc;
+    }
   }
   img {
     width: 100%;

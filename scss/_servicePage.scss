@@ -65,6 +65,8 @@
   }
   .get-list {
     display: flex;
+    align-items: center;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 16px;
   }
@@ -77,6 +79,12 @@
     gap: 10px;
     padding: 16px;
     border-radius: 4px;
+    @media screen and (max-width: 800px) {
+      width: calc((100% - 32px) / 3);
+    }
+    @media screen and (max-width: 640px) {
+      width: calc((100% - 16px) / 2);
+    }
     h3 {
       text-transform: capitalize;
     }
@@ -109,9 +117,11 @@
   .who-item {
     background-color: var(--background-color);
     width: calc((100% - 32px) / 3);
-
     border-radius: 4px;
     overflow: hidden;
+    @media screen and (max-width: 768px) {
+      width: 100%;
+    }
     img {
       height: 200px;
       width: 100%;
@@ -123,5 +133,49 @@
     flex-direction: column;
     gap: 10px;
     padding: 16px;
+  }
+}
+.bonuses {
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .section-title {
+  }
+  .text {
+  }
+  .bonus-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+  .bonus-item {
+    width: calc((100% - 48px) / 4);
+    background-color: var(--background-color);
+    border-radius: 4px;
+    overflow: hidden;
+    @media screen and (max-width: 950px) {
+      width: calc((100% - 16px) / 2);
+    }
+    @media screen and (max-width: 500px) {
+      width: 100%;
+    }
+    img {
+      width: 100%;
+      height: 196px;
+      object-fit: cover;
+    }
+  }
+  .bonus-info {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  .bonus-name {
+    color: var(--accent-color);
   }
 }
