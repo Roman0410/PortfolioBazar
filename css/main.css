@@ -473,6 +473,7 @@ h3 {
   width: calc((100% - 48px) / 4);
   background-color: #000;
   border-radius: 4px;
+  overflow: hidden;
 }
 .advantages-item img {
   width: 100%;
