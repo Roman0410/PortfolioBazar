@@ -101,7 +101,7 @@
   .quote-icon {
     fill: var(--accent-color);
   }
-  .quote {
+  .quote-text {
     font-weight: 400;
     font-size: 18px;
     line-height: 25px;
@@ -194,5 +194,50 @@
   }
   .tech-name {
     color: var(--accent-color);
+  }
+}
+.located {
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .section-title {
+    margin: 0;
+  }
+  .text {
+    text-align: center;
+  }
+  .located-list {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+  .located-item {
+    background-color: var(--background-color);
+    border-radius: 4px;
+    overflow: hidden;
+    width: calc((100% - 32px) / 3);
+    @media screen and (max-width: 680px) {
+      width: 100%;
+    }
+    img {
+      width: 100%;
+      height: 190px;
+      object-fit: cover;
+    }
+  }
+  .located-body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px;
+    p {
+      margin: 0;
+    }
+  }
+  .city {
+    color: var(--accent-color);
+    font-size: 23px;
   }
 }
